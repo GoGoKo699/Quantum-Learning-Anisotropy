@@ -57,6 +57,23 @@ Start with the [model and exact results](science/model.md).
 
 [The LLM reading guide](llms.txt) maps questions to authoritative files.
 
+## Learning route
+
+The single educational anchor is **Larocca et al., Barren Plateaus in
+Variational Quantum Computing** (2025), using arXiv:2405.00781v2 for
+section references.
+
+- [Source-to-project bridge](learning/LAROCCA_BRIDGE.md): targeted readings,
+  notation, a complete dual-rail example, and the steps from conserved
+  transport to the full-gradient separation.
+- [30-milestone understanding map](learning/MILESTONES.md): 12
+  background/preliminaries milestones and 18 narrative/innovation
+  milestones, progressing from local ingredients to the complete scientific
+  account in each phase.
+
+The map is defined by the project and is common to every reader. Exact
+claims and proofs remain in the scientific pages above.
+
 ## Reproduce the finite checks
 
 With Python and NumPy available, run from the repository root:

@@ -29,6 +29,26 @@ an average input state, circuit, readout, and efficient encoder.
 - verification/README.md — Commands, expected assertions, and verification
   scope.
 
+## Study route
+
+- learning/LAROCCA_BRIDGE.md — The selected educational anchor is Larocca
+  et al., Barren Plateaus in Variational Quantum Computing (2025), with
+  section numbering from arXiv:2405.00781v2. The bridge translates the
+  circuit/data/readout framework into the project's population loss, gives
+  a complete dual-rail example, and explains the transport, interference,
+  and full-gradient arguments.
+- learning/MILESTONES.md — Exactly M01–M30: 12 background/preliminaries
+  targets and 18 narrative/innovation targets. Each phase moves from local
+  ingredients to a global synthesis. Dependencies and scientific pointers
+  define a common route for any reader, including an LLM.
+
+Use the bridge to enter the work, the milestone map to connect its ideas,
+and the science pages for exact assumptions and proofs. Review sections
+provide context; the project-specific transport and covariance arguments
+are derived in science/, with imported probability ingredients attributed.
+The review's group 2-design formula and bounded-Hamming-weight examples
+are not assumptions of the half-filled finite-depth theorem.
+
 ## Essential distinctions
 
 The observable is fixed physical Z_0. The expected error is that of a random
