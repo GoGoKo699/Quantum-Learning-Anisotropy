@@ -205,7 +205,7 @@ that random measured sign as its prediction. Its expected error is exactly
 ```math
 L_u(U)
 =\frac12-\frac14
-\operatorname{Tr}\!\left[
+\mathrm{Tr}\!\left[
 Z_0U(\rho_{u,+}-\rho_{u,-})U^\dagger
 \right].
 ```
@@ -223,7 +223,7 @@ For the phase task, set
 \langle U\bar z_x\vert Z_0\vert Uz_x\rangle.
 ```
 
-Then $`L_X=1/2-\operatorname{Re}\overline A/2`$.
+Then $`L_X=1/2-\mathrm{Re}\overline A/2`$.
 The bounds below concern derivatives of this population loss. In particular,
 the density lower bound does not replace the square of an averaged
 derivative by an average of squares.
@@ -310,7 +310,7 @@ K_{ab}
 Then
 
 ```math
-K=\operatorname{diag}(\kappa_\perp,\kappa_\perp,\kappa_Z),
+K=\mathrm{diag}(\kappa_\perp,\kappa_\perp,\kappa_Z),
 \qquad
 \mathbb E\mathcal G(L_u)
 =\kappa_Zu_z^2+
@@ -335,7 +335,7 @@ If its prescribed decoder word has $`L=O(n)`$ matching layers, a random
 $`D`$-layer skeleton contains that classifier except with probability
 
 ```math
-\Pr\!\left[\operatorname{Bin}(D,\tfrac12)<L\right]
+\Pr\!\left[\mathrm{Bin}(D,\tfrac12)<L\right]
 \le e^{-D/16},
 \qquad D\ge4L.
 ```

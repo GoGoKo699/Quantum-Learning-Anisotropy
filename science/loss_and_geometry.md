@@ -16,7 +16,7 @@ Its population expectation is
 
 ```math
 L_u(U)
-=\frac12-\frac14\operatorname{Tr}\!\left[
+=\frac12-\frac14\mathrm{Tr}\!\left[
  Z_0U(\rho_{u,+}-\rho_{u,-})U^\dagger\right].
 ```
 
@@ -59,9 +59,9 @@ A_x(U)=\langle U\bar z_x|Z_0|Uz_x\rangle,
 Then
 
 ```math
-L_X=\frac12-\frac12\operatorname{Re}\bar A,
+L_X=\frac12-\frac12\mathrm{Re}\bar A,
 \qquad
-L_Y=\frac12-\frac12\operatorname{Im}\bar A.
+L_Y=\frac12-\frac12\mathrm{Im}\bar A.
 ```
 
 These are population-loss identities. In particular, the density gradient must be obtained from the signed population contrast before squaring; an average of per-example gradient variances does not provide a lower bound for it.
@@ -340,7 +340,7 @@ The shifts are $`(\pi/4,-\pi/4,\pi/2,-\pi/2)`$. An unbiased estimator of one pop
 3. Measure $`r\in\{-1,+1\}`$ and return
 
 ```math
-X=-\frac S2\operatorname{sgn}(w_j)yr.
+X=-\frac S2\mathrm{sgn}(w_j)yr.
 ```
 
 Since $`\sum_jw_j=0`$,

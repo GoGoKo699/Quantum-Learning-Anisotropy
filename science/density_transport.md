@@ -79,9 +79,9 @@ This averaged matrix is appropriate for the density calculation, where independe
 Let $`\rho_+`$ be the diagonal positive-class input mixture and $`\rho_-`$ its complemented mixture. Write
 
 ```math
-\bar q_j=\operatorname{Tr}(Z_j\rho_+),
+\bar q_j=\mathrm{Tr}(Z_j\rho_+),
 \qquad
-\operatorname{Tr}(Z_j\rho_-)=-\bar q_j.
+\mathrm{Tr}(Z_j\rho_-)=-\bar q_j.
 ```
 
 After $`t`$ averaged prefix layers the positive profile is $`P^t\bar q`$. Averaging a suffix of $`s`$ layers sends the readout to

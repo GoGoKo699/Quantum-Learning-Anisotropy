@@ -287,9 +287,9 @@ The inequality is applied to the population amplitude in the upper-bound directi
 For the phase conventions in [the model](model.md), the binary classification losses are exactly
 
 ```math
-L_X=\frac12-\frac12\operatorname{Re}\overline A,
+L_X=\frac12-\frac12\mathrm{Re}\overline A,
 \qquad
-L_Y=\frac12-\frac12\operatorname{Im}\overline A.
+L_Y=\frac12-\frac12\mathrm{Im}\overline A.
 \tag{15}
 ```
 
@@ -358,7 +358,7 @@ The exponent in (1) is a positive constant times $`n`$. Absorbing $`M=O(n^3)`$ p
 
 ### Exact perfect-wall identity
 
-For $`q^{\mathrm{wall}}=\operatorname{sign}(f)`$,
+For $`q^{\mathrm{wall}}=\mathrm{sign}(f)`$,
 
 ```math
 \langle f,q^{\mathrm{wall}}\rangle=m_0=2\csc(\pi/n).
@@ -402,7 +402,7 @@ Encode the independent fair matching choices by bits $`B_1,\ldots,B_D`$, with ze
 is a bijection of the Boolean cube. Its output bits are independent and fair, and their sum is $`\nu`$. Thus
 
 ```math
-\nu\sim\operatorname{Binomial}(D,1/2),
+\nu\sim\mathrm{Binomial}(D,1/2),
 \qquad
 \Pr\left(\nu>D/2+\sqrt{nD}\right)\le e^{-2n}.
 \tag{21}

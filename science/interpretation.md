@@ -32,7 +32,7 @@ This comparison controls a limitation of diagnostics based only on the mean inpu
 One shot of the classifier measures physical $`Z_0`$ and uses the resulting sign as its predicted label. The expected error of that prediction is
 
 ```math
-L_u(U)=\frac12-\frac14\operatorname{Tr}\!\left[
+L_u(U)=\frac12-\frac14\mathrm{Tr}\!\left[
 Z_0U(\rho_{u,+}-\rho_{u,-})U^\dagger\right].
 ```
 
@@ -70,7 +70,7 @@ K_{ab}=\mathbb E\!\left[
 An on-site input phase implements an arbitrary logical rotation about the control's density axis, independently of nuisance. Absorbing that phase into the first Haar layer preserves the circuit distribution and the left-tangent convention. Consequently,
 
 ```math
-K=\operatorname{diag}(\kappa_\perp,\kappa_\perp,\kappa_Z),
+K=\mathrm{diag}(\kappa_\perp,\kappa_\perp,\kappa_Z),
 \qquad
 \mathbb E\|\nabla_{\mathrm{nat}}L_u\|^2
 =\kappa_Zu_z^2+\kappa_\perp(u_x^2+u_y^2).

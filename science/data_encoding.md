@@ -31,8 +31,8 @@ Thus choosing the control state and preparing a nuisance product input require a
 Write the input logical bits as $`(b,x_2,\ldots,x_m)`$. Apply the sequential CNOT chain
 
 ```math
-F=\operatorname{CNOT}_{m-1\to m}\cdots
-  \operatorname{CNOT}_{2\to3}\operatorname{CNOT}_{1\to2},
+F=\mathrm{CNOT}_{m-1\to m}\cdots
+  \mathrm{CNOT}_{2\to3}\mathrm{CNOT}_{1\to2},
 ```
 
 where the rightmost gate acts first. The output logical bits are
@@ -199,10 +199,10 @@ act together on the logical subspace as
 WV=(-1)^{(1-r)s+s}=(-1)^{rs}=CZ_L.
 ```
 
-Both factors may be applied on the same boundary pair $`(B,C)`$. Their product is the allowed physical two-qubit matrix $`\operatorname{diag}(1,-1,1,1)`$ in the ordered basis $`00,01,10,11`$. A logical CNOT follows from target Hadamards:
+Both factors may be applied on the same boundary pair $`(B,C)`$. Their product is the allowed physical two-qubit matrix $`\mathrm{diag}(1,-1,1,1)`$ in the ordered basis $`00,01,10,11`$. A logical CNOT follows from target Hadamards:
 
 ```math
-\operatorname{CNOT}_{r\to r+1}
+\mathrm{CNOT}_{r\to r+1}
 =H_{r+1}\,CZ_{r,r+1}\,H_{r+1}.
 ```
 
@@ -246,7 +246,7 @@ Conditional on the past, each match succeeds with probability $`1/2`$. These suc
 
 ```math
 \Pr(\text{decoder does not fit})
-=\Pr\!\left[\operatorname{Bin}(D,1/2)<L\right]
+=\Pr\!\left[\mathrm{Bin}(D,1/2)<L\right]
 \le e^{-D/16},
 \qquad D\ge4L.
 ```
