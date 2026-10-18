@@ -246,7 +246,7 @@ Conditional on the past, each match succeeds with probability $`1/2`$. These suc
 
 ```math
 \Pr(\text{decoder does not fit})
-=\Pr\!\left[\mathrm{Bin}(D,1/2)<L\right]
+=\Pr\!\left[\mathrm{Bin}(D,1/2)\lt L\right]
 \le e^{-D/16},
 \qquad D\ge4L.
 ```

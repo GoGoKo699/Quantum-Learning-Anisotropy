@@ -335,7 +335,7 @@ If its prescribed decoder word has $`L=O(n)`$ matching layers, a random
 $`D`$-layer skeleton contains that classifier except with probability
 
 ```math
-\Pr\!\left[\mathrm{Bin}(D,\tfrac12)<L\right]
+\Pr\!\left[\mathrm{Bin}(D,\tfrac12)\lt L\right]
 \le e^{-D/16},
 \qquad D\ge4L.
 ```
