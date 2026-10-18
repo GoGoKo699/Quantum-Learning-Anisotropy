@@ -1,0 +1,312 @@
+{
+  "status": "passed",
+  "scope": "Finite verification of identities and constructions; not an asymptotic or novelty proof.",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "utc_time": "2026-10-18T16:12:12.915020+00:00"
+  },
+  "harmonic_schedule": {
+    "enumerated_schedule_instances": 2040,
+    "max_harmonic_identity_absolute_error": 3.552713678800501e-15,
+    "binomial_switch_count_exact": true
+  },
+  "native_tangents": {
+    "lie_algebra_rank": 6,
+    "all_generators_charge_preserving_norm_one_integer_spectrum": true,
+    "max_conditional_density_gradient_error": 1.3322676295501878e-15
+  },
+  "quantum_bounds": {
+    "n": 8,
+    "circuit_and_generator_cases": 9,
+    "angle_grid_points_per_case": 16,
+    "maximum_projector_inequality_excess": 0.0,
+    "maximum_parseval_inequality_excess": 0.0,
+    "maximum_four_shift_gradient_error": 6.591949208711867e-17
+  },
+  "fourier_bounds": {
+    "sizes_and_depths": [
+      {
+        "n": 8,
+        "base_depth": 7
+      },
+      {
+        "n": 12,
+        "base_depth": 15
+      },
+      {
+        "n": 16,
+        "base_depth": 26
+      },
+      {
+        "n": 24,
+        "base_depth": 59
+      },
+      {
+        "n": 32,
+        "base_depth": 104
+      },
+      {
+        "n": 64,
+        "base_depth": 416
+      },
+      {
+        "n": 128,
+        "base_depth": 1661
+      },
+      {
+        "n": 256,
+        "base_depth": 6641
+      }
+    ],
+    "minimum_readout_bound_ratio": 1.785901572931008,
+    "maximum_relative_domain_wall_identity_error": 2.263002040695711e-15
+  },
+  "encoder_decoder": [
+    {
+      "n": 4,
+      "domain_wall_z": "1100",
+      "native_encoder_depth": 6,
+      "native_encoder_gate_count": 7,
+      "max_gate_charge_commutator_norm": 0.0,
+      "max_gate_unitarity_error": 3.1560822113208575e-16,
+      "states": {
+        "0": {
+          "encoding_vector_error": 2.231687133607212e-16,
+          "decoding_vector_error": 3.330674887909457e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999993,
+          "expected_label": 1
+        },
+        "1": {
+          "encoding_vector_error": 2.231687133607212e-16,
+          "decoding_vector_error": 4.474684448791271e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999991,
+          "expected_label": -1
+        },
+        "+": {
+          "encoding_vector_error": 1.6034120733630388e-16,
+          "decoding_vector_error": 3.1416289355576004e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999991,
+          "expected_label": 1
+        },
+        "-": {
+          "encoding_vector_error": 1.6034120733630388e-16,
+          "decoding_vector_error": 3.1416289355576004e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999991,
+          "expected_label": -1
+        },
+        "+i": {
+          "encoding_vector_error": 1.6034120733630388e-16,
+          "decoding_vector_error": 3.1416289355576004e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999991,
+          "expected_label": 1
+        },
+        "-i": {
+          "encoding_vector_error": 1.6034120733630388e-16,
+          "decoding_vector_error": 3.1416289355576004e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999991,
+          "expected_label": -1
+        }
+      },
+      "all_nuisance_inputs": [
+        {
+          "nuisance_x": "0",
+          "positive_branch_y": "00",
+          "positive_branch_physical_string": "1100",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 2.231687133607212e-16,
+          "max_decoding_vector_error": 4.474684448791271e-16,
+          "max_label_expectation_error": 8.881784197001252e-16
+        },
+        {
+          "nuisance_x": "1",
+          "positive_branch_y": "01",
+          "positive_branch_physical_string": "1001",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 2.231687133607212e-16,
+          "max_decoding_vector_error": 4.474684448791271e-16,
+          "max_label_expectation_error": 8.881784197001252e-16
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "domain_wall_z": "11100001",
+      "native_encoder_depth": 15,
+      "native_encoder_gate_count": 18,
+      "max_gate_charge_commutator_norm": 0.0,
+      "max_gate_unitarity_error": 3.1560822113208575e-16,
+      "states": {
+        "0": {
+          "encoding_vector_error": 4.452794489593763e-16,
+          "decoding_vector_error": 9.99509589893183e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.999999999999998,
+          "expected_label": 1
+        },
+        "1": {
+          "encoding_vector_error": 4.452794489593763e-16,
+          "decoding_vector_error": 9.99509589893183e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.999999999999998,
+          "expected_label": -1
+        },
+        "+": {
+          "encoding_vector_error": 4.724369383096759e-16,
+          "decoding_vector_error": 9.426894073829461e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999978,
+          "expected_label": 1
+        },
+        "-": {
+          "encoding_vector_error": 4.724369383096759e-16,
+          "decoding_vector_error": 9.426894073829461e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999978,
+          "expected_label": -1
+        },
+        "+i": {
+          "encoding_vector_error": 4.724369383096759e-16,
+          "decoding_vector_error": 9.426894073829461e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999978,
+          "expected_label": 1
+        },
+        "-i": {
+          "encoding_vector_error": 4.724369383096759e-16,
+          "decoding_vector_error": 9.426894073829461e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999978,
+          "expected_label": -1
+        }
+      },
+      "all_nuisance_inputs": [
+        {
+          "nuisance_x": "000",
+          "positive_branch_y": "0000",
+          "positive_branch_physical_string": "11100001",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "001",
+          "positive_branch_y": "0001",
+          "positive_branch_physical_string": "11100010",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "010",
+          "positive_branch_y": "0011",
+          "positive_branch_physical_string": "11000110",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "011",
+          "positive_branch_y": "0010",
+          "positive_branch_physical_string": "11000101",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "100",
+          "positive_branch_y": "0111",
+          "positive_branch_physical_string": "10001110",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "101",
+          "positive_branch_y": "0110",
+          "positive_branch_physical_string": "10001101",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "110",
+          "positive_branch_y": "0100",
+          "positive_branch_physical_string": "10101001",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.995095898931827e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "111",
+          "positive_branch_y": "0101",
+          "positive_branch_physical_string": "10101010",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.995095898931827e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        }
+      ]
+    }
+  ],
+  "analytic_bound_evaluation": {
+    "scope": "Evaluation of analytic inequalities; no circuit simulation or fitted scaling.",
+    "depth_rule": "D = ceil(n^2/8)",
+    "source": "Fixed-weight nuisance source in science/model.md",
+    "rows": [
+      {
+        "n": 256,
+        "depth": 8192,
+        "log10_density_energy_lower": -10.530626128957348,
+        "log10_phase_energy_upper": 6.798751163663266,
+        "log10_upper_to_lower_ratio": 17.329377292620617,
+        "concentration_exponent": 0.1588971971030617
+      },
+      {
+        "n": 1024,
+        "depth": 131072,
+        "log10_density_energy_lower": -12.937247534623387,
+        "log10_phase_energy_upper": 8.604931137647153,
+        "log10_upper_to_lower_ratio": 21.54217867227054,
+        "concentration_exponent": 1.032384108876707
+      },
+      {
+        "n": 4096,
+        "depth": 2097152,
+        "log10_density_energy_lower": -15.345068261882828,
+        "log10_phase_energy_upper": 8.755798057727763,
+        "log10_upper_to_lower_ratio": 24.100866319610592,
+        "concentration_exponent": 5.197793523276024
+      },
+      {
+        "n": 16384,
+        "depth": 33554432,
+        "log10_density_energy_lower": -17.75320250325802,
+        "log10_phase_energy_upper": 2.7194935090348706,
+        "log10_upper_to_lower_ratio": 20.472696012292893,
+        "concentration_exponent": 23.255781477228105
+      },
+      {
+        "n": 65536,
+        "depth": 536870912,
+        "log10_density_energy_lower": -20.16141598040229,
+        "log10_phase_energy_upper": -28.06948903782048,
+        "log10_upper_to_lower_ratio": -7.908073057418195,
+        "concentration_exponent": 98.30891680143077
+      }
+    ]
+  }
+}
