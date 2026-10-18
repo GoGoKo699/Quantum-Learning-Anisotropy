@@ -1,0 +1,62 @@
+# Quantum Learning Anisotropy
+
+This project studies label-dependent local gradient energies in an interacting,
+particle-number-conserving quantum random circuit. Conserved-density labels
+have a polynomial ensemble energy floor at diffusive depth. Complementary
+phase labels have an exponentially small full native gradient. The tasks share
+an average input state, circuit, readout, and efficient encoder.
+
+## Story and exact-result route
+
+- README.md — Question, central comparison, reading routes, and scope.
+- science/model.md — Authoritative circuit ensemble, input source, operational
+  loss, native tangent basis, full-gradient theorems, and quantifiers.
+- science/data_encoding.md — Dual-rail encoder, extensive nuisance family,
+  same high-rank average state, exact decoder, and native resource costs.
+- science/coherence_bound.md — Fixed-schedule exclusion process, imported
+  negative-dependence theorems, charge concentration, interference second
+  moment, and all-coordinate Parseval/Haar argument.
+- science/density_transport.md — Population contrast, Fourier-mode estimates,
+  marked Haar block, first-layer lower bound, and general-profile extension.
+- science/loss_and_geometry.md — Exact axial gradient covariance, operational
+  loss versus other losses, probability consequences, and shot resources.
+- science/interpretation.md — Physical synthesis and consequences permitted
+  by the bounds.
+- science/finite_size.md — Stable evaluation of the explicit analytic bounds
+  and the practical limits of their constants.
+- references/RELATED_WORK.md — Attribution and theorem-level comparison.
+- references/references.bib — Structured bibliographic records.
+- verification/README.md — Commands, expected assertions, and verification
+  scope.
+
+## Essential distinctions
+
+The observable is fixed physical Z_0. The expected error is that of a random
+prediction drawn from its measurement. The density lower is for the square
+of the population-loss gradient, not the average of per-example squares.
+The phase bound is an actual squared-amplitude and full-gradient estimate;
+a zero first moment would not establish it.
+
+The native metric is the sum over six specified norm-one left tangents per
+local gate. The identity derivative vanishes but is retained in M=3nD.
+Coordinate independence is not assumed.
+
+Concentration is conditioned on both the matching schedule and the nuisance
+input. Mixtures of strongly Rayleigh measures are not assumed strongly
+Rayleigh. Averaging is performed after the valid bounds.
+
+The logical tasks share the same average density operator, not the same
+supplied pure-state ensemble. A common inverse encoder works for all nuisance
+values; different logical axes use their appropriate final basis rotation.
+
+The polynomial density moment does not establish typical trainability or
+convergence. The exponential phase upper controls typical local gradients,
+but does not prohibit all learning strategies. The explicit decoder rules
+out a data-hardness interpretation. The data's nuisance entropy does not
+certify noise robustness.
+
+## Reproduction
+
+Run python3 verification/run_all.py from the repository root.
+Finite checks use the written tolerances; they do not prove asymptotic
+scaling or literature novelty.

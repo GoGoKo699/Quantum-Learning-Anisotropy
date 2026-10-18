@@ -1,0 +1,203 @@
+{
+  "description": "Deterministic statevector audit of explicit local U1 dual-rail encoder and inverse decoder; no random-circuit simulation.",
+  "checks": [
+    {
+      "n": 4,
+      "domain_wall_z": "1100",
+      "native_encoder_depth": 6,
+      "native_encoder_gate_count": 7,
+      "max_gate_charge_commutator_norm": 0.0,
+      "max_gate_unitarity_error": 3.1560822113208575e-16,
+      "states": {
+        "0": {
+          "encoding_vector_error": 2.231687133607212e-16,
+          "decoding_vector_error": 3.330674887909457e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999993,
+          "expected_label": 1
+        },
+        "1": {
+          "encoding_vector_error": 2.231687133607212e-16,
+          "decoding_vector_error": 4.474684448791271e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999991,
+          "expected_label": -1
+        },
+        "+": {
+          "encoding_vector_error": 1.6034120733630388e-16,
+          "decoding_vector_error": 3.1416289355576004e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999991,
+          "expected_label": 1
+        },
+        "-": {
+          "encoding_vector_error": 1.6034120733630388e-16,
+          "decoding_vector_error": 3.1416289355576004e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999991,
+          "expected_label": -1
+        },
+        "+i": {
+          "encoding_vector_error": 1.6034120733630388e-16,
+          "decoding_vector_error": 3.1416289355576004e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999991,
+          "expected_label": 1
+        },
+        "-i": {
+          "encoding_vector_error": 1.6034120733630388e-16,
+          "decoding_vector_error": 3.1416289355576004e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999991,
+          "expected_label": -1
+        }
+      },
+      "all_nuisance_inputs": [
+        {
+          "nuisance_x": "0",
+          "positive_branch_y": "00",
+          "positive_branch_physical_string": "1100",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 2.231687133607212e-16,
+          "max_decoding_vector_error": 4.474684448791271e-16,
+          "max_label_expectation_error": 8.881784197001252e-16
+        },
+        {
+          "nuisance_x": "1",
+          "positive_branch_y": "01",
+          "positive_branch_physical_string": "1001",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 2.231687133607212e-16,
+          "max_decoding_vector_error": 4.474684448791271e-16,
+          "max_label_expectation_error": 8.881784197001252e-16
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "domain_wall_z": "11100001",
+      "native_encoder_depth": 15,
+      "native_encoder_gate_count": 18,
+      "max_gate_charge_commutator_norm": 0.0,
+      "max_gate_unitarity_error": 3.1560822113208575e-16,
+      "states": {
+        "0": {
+          "encoding_vector_error": 4.452794489593763e-16,
+          "decoding_vector_error": 9.99509589893183e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.999999999999998,
+          "expected_label": 1
+        },
+        "1": {
+          "encoding_vector_error": 4.452794489593763e-16,
+          "decoding_vector_error": 9.99509589893183e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.999999999999998,
+          "expected_label": -1
+        },
+        "+": {
+          "encoding_vector_error": 4.724369383096759e-16,
+          "decoding_vector_error": 9.426894073829461e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999978,
+          "expected_label": 1
+        },
+        "-": {
+          "encoding_vector_error": 4.724369383096759e-16,
+          "decoding_vector_error": 9.426894073829461e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999978,
+          "expected_label": -1
+        },
+        "+i": {
+          "encoding_vector_error": 4.724369383096759e-16,
+          "decoding_vector_error": 9.426894073829461e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": 0.9999999999999978,
+          "expected_label": 1
+        },
+        "-i": {
+          "encoding_vector_error": 4.724369383096759e-16,
+          "decoding_vector_error": 9.426894073829461e-16,
+          "wrong_charge_probability": 0.0,
+          "readout_expectation_Z0": -0.9999999999999978,
+          "expected_label": -1
+        }
+      },
+      "all_nuisance_inputs": [
+        {
+          "nuisance_x": "000",
+          "positive_branch_y": "0000",
+          "positive_branch_physical_string": "11100001",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "001",
+          "positive_branch_y": "0001",
+          "positive_branch_physical_string": "11100010",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "010",
+          "positive_branch_y": "0011",
+          "positive_branch_physical_string": "11000110",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "011",
+          "positive_branch_y": "0010",
+          "positive_branch_physical_string": "11000101",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "100",
+          "positive_branch_y": "0111",
+          "positive_branch_physical_string": "10001110",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "101",
+          "positive_branch_y": "0110",
+          "positive_branch_physical_string": "10001101",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.99509589893183e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "110",
+          "positive_branch_y": "0100",
+          "positive_branch_physical_string": "10101001",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.995095898931827e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        },
+        {
+          "nuisance_x": "111",
+          "positive_branch_y": "0101",
+          "positive_branch_physical_string": "10101010",
+          "control_states_checked": 6,
+          "max_encoding_vector_error": 4.724369383096759e-16,
+          "max_decoding_vector_error": 9.995095898931827e-16,
+          "max_label_expectation_error": 2.220446049250313e-15
+        }
+      ]
+    }
+  ]
+}
