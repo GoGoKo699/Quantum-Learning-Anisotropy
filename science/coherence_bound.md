@@ -89,7 +89,7 @@ For the random matching ensemble, set $`r_D=D/2+\sqrt{nD}`$. A sharper finite-si
 \tag{3}
 ```
 
-When $`m_*=0`$, these formulas assert only $`\mathbb E\mathcal G_u\le M`$. A positive-separation concentration argument is needed only when $`\beta n>\pi`$.
+When $`m_*=0`$, these formulas assert only $`\mathbb E\mathcal G_u\le M`$. For the concentration argument below, therefore assume $`\beta n>\pi`$.
 
 ## 2. Haar-averaged populations are a conditional exclusion process
 

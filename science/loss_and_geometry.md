@@ -347,7 +347,7 @@ Since $`\sum_jw_j=0`$,
 
 ```math
 \mathbb E X
-=\sum_jw_jL_u(\theta+s_j)
+=\sum_jw_jL_u(s_j)
 =\partial_{G,H}L_u.
 ```
 
