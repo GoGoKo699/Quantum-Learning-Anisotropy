@@ -65,7 +65,7 @@ such bits. Thus every nuisance branch satisfies
 1,\,
 4\exp\left[-\frac{m_*^2c_n^{2D}}{8n}\right]
 \right\}.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 This also holds conditional on every fixed matching schedule, averaging only over the Haar gates. For fixed $`\alpha,\beta>0`$ and $`D=\lfloor\alpha n^2\rfloor`$,
@@ -74,7 +74,7 @@ This also holds conditional on every fixed matching schedule, averaging only ove
 \mathbb E\,\mathcal G_X,\quad
 \mathbb E\,\mathcal G_Y
 \le \exp[-\Omega_{\alpha,\beta}(n)].
-\tag{2}
+\qquad\text{(2)}
 ```
 
 For the random matching ensemble, set $`r_D=D/2+\sqrt{nD}`$. A sharper finite-size bound is
@@ -86,7 +86,7 @@ For the random matching ensemble, set $`r_D=D/2+\sqrt{nD}`$. A sharper finite-si
 4\exp\left[-\frac{m_*^2c_n^{2r_D}}{8n}\right]+e^{-2n}
 \right\},
 \qquad u=X,Y.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 When $`m_*=0`$, these formulas assert only $`\mathbb E\mathcal G_u\le M`$. For the concentration argument below, therefore assume $`\beta n>\pi`$.
@@ -123,7 +123,7 @@ Averaging a sine over a matched pair gives its value at the pair midpoint multip
 P_Ah_A=h_A,\qquad P_Bh_B=h_B,
 \qquad
 P_Ah_B=c_nh_A,\qquad P_Bh_A=c_nh_B.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 For example, the B-pair midpoints adjoining an A pair of midpoint $`j+1/2`$ are $`j-1/2`$ and $`j+3/2`$. Their sine average is $`\cos(k)`$ times the sine at $`j+1/2`$, proving the cross relation.
@@ -135,7 +135,7 @@ Let $`s(\sigma)`$ count changes between consecutive matchings. Pulling the proje
 =c_n^{s(\sigma)}
 \langle P_{\sigma_1}f,q\rangle,
 \qquad D\ge1.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 On one matched edge the contribution to $`\|P_Af-f\|_1`$ is the absolute difference of its two original sine values, at most $`2\sin(\pi/n)`$. Thus
@@ -144,7 +144,7 @@ On one matched edge the contribution to $`\|P_Af-f\|_1`$ is the absolute differe
 \|P_Af-f\|_1\le n\sin(\pi/n)\le\pi,
 \qquad
 \|P_Bf-f\|_1\le\pi.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Since $`\|q^{(x)}\|_\infty=1`$, the conditional mean of the signed charge statistic satisfies
@@ -154,7 +154,7 @@ Since $`\|q^{(x)}\|_\infty=1`$, the conditional mean of the signed charge statis
 :=\mathbb E_{\sigma,x}\sum_jf_jZ_j
 \ge(\beta n-\pi)c_n^{s(\sigma)}
 \ge(\beta n-\pi)c_n^D.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 Complementing an input complements every configuration of the swap process. The complementary branch therefore has mean exactly $`-\mu_{\sigma,x}`$.
@@ -173,7 +173,7 @@ The weights lie in $`[0,1]`$. Fixed half filling and $`\sum_jf_j=0`$ give the po
 
 ```math
 T=\frac n4-\frac14\sum_jf_jZ_j.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 The two branch means of $`T`$ are consequently $`n/4\mp\mu_{\sigma,x}/4`$.
@@ -185,7 +185,7 @@ Negative association implies, for every real $`t`$,
 \le
 \prod_j
 \mathbb E e^{t w_j(N_j-\mathbb EN_j)}.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 For positive $`t`$, the factors are nonnegative increasing functions on disjoint coordinates. For negative $`t`$, they are nonnegative decreasing functions. The two-function inequality also holds for decreasing functions by changing both signs, and induction applies because their products stay nonnegative and decreasing.
@@ -209,7 +209,7 @@ Combining with (9) and optimizing the exponential Markov bound proves both one-s
 \exp\left[-\frac{2v^2}{\sum_jw_j^2}\right]
 \le e^{-2v^2/n},
 \qquad v\ge0.
-\tag{10}
+\qquad\text{(10)}
 ```
 
 The threshold $`T=n/4`$ distinguishes the branches with each conditional error at most
@@ -217,7 +217,7 @@ The threshold $`T=n/4`$ distinguishes the branches with each conditional error a
 ```math
 \delta_{\sigma,x}
 =\exp\left[-\frac{\mu_{\sigma,x}^2}{8n}\right].
-\tag{11}
+\qquad\text{(11)}
 ```
 
 The exact sum $`\sum_jw_j^2=3n/8`$ improves the denominator in (11) to $`3n`$. The theorem retains the conservative $`8n`$.
@@ -251,7 +251,7 @@ Splitting the matrix element into the two projector sectors and using Cauchy–S
 &\le\sqrt{e_{+,x}}+\sqrt{e_{-,x}},\\
 |A_x|^2&\le2(e_{+,x}+e_{-,x}).
 \end{aligned}
-\tag{12}
+\qquad\text{(12)}
 ```
 
 The Haar averages of these errors are exactly the two classical population errors in (11). Hence
@@ -259,7 +259,7 @@ The Haar averages of these errors are exactly the two classical population error
 ```math
 \mathbb E_G[|A_x(U)|^2\mid\sigma,x]
 \le4\delta_{\sigma,x}.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 This bounds the second moment of an actual off-diagonal quantum matrix element; a zero mean has not been substituted for a small second moment.
@@ -277,7 +277,7 @@ Using the uniform mean gap and $`|\overline A|\le1`$ therefore yields
 1,\,
 4\exp\left[-\frac{m_*^2c_n^{2s(\sigma)}}{8n}\right]
 \right\}.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 The inequality is applied to the population amplitude in the upper-bound direction. No property of the nuisance-averaged classical measure is required.
@@ -290,7 +290,7 @@ For the phase conventions in [the model](model.md), the binary classification lo
 L_X=\frac12-\frac12\mathrm{Re}\overline A,
 \qquad
 L_Y=\frac12-\frac12\mathrm{Im}\overline A.
-\tag{15}
+\qquad\text{(15)}
 ```
 
 Fix all base gates and vary one as $`e^{-i\theta H}G_e`$. The angle enters through a single conjugation. The generator's eigenvalue differences belong to $`\{-2,-1,0,1,2\}`$, so
@@ -306,7 +306,7 @@ Parseval gives
 =\sum_{r=-2}^{2}r^2|a_r|^2
 \le4\sum_{r=-2}^{2}|a_r|^2
 =\frac4{2\pi}\int_0^{2\pi}|\overline A(\theta)|^2\,d\theta.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 The factor $`1/2`$ in (15) consequently gives, for $`u=X,Y`$,
@@ -316,7 +316,7 @@ The factor $`1/2`$ in (15) consequently gives, for $`u=X,Y`$,
 \left(\frac{dL_u(\theta)}{d\theta}\right)^2\,d\theta
 \le
 \frac1{2\pi}\int_0^{2\pi}|\overline A(\theta)|^2\,d\theta.
-\tag{17}
+\qquad\text{(17)}
 ```
 
 Now average over the selected Haar gate. For any fixed angle,
@@ -326,7 +326,7 @@ $`e^{-i\theta H}G_e`$ is again Haar and independent of the other gates. Its deri
 \mathbb E_G[(\partial_{e,H}L_u)^2\mid\sigma]
 \le
 \mathbb E_G[|\overline A(U)|^2\mid\sigma].
-\tag{18}
+\qquad\text{(18)}
 ```
 
 The auxiliary angle belongs only to the proof. The circuit has no additional gate or specially randomized angle.
@@ -339,7 +339,7 @@ Summing (18) over the $`M`$ coordinates proves
 1,\,
 4\exp\left[-\frac{m_*^2c_n^{2s(\sigma)}}{8n}\right]
 \right\}.
-\tag{19}
+\qquad\text{(19)}
 ```
 
 No independence between gradient coordinates is used. Since $`s(\sigma)\le D`$, this proves (1). Haar invariance also makes the mean of each derivative zero: the Haar-averaged loss is constant under that left multiplication. The energy is therefore a sum of coordinate variances.
@@ -384,7 +384,7 @@ The second equality follows from (4) and $`P_{Q_0}q^{\mathrm{wall}}=q^{\mathrm{w
 \mu_\sigma=m_0c_n^{\nu(\sigma)},
 \qquad
 \nu(\sigma)=\mathbf1_{\{\sigma_1\ne Q_0\}}+s(\sigma).
-\tag{20}
+\qquad\text{(20)}
 ```
 
 For general profiles, $`s(\sigma)\le\nu(\sigma)`$, so $`m_*c_n^{\nu(\sigma)}`$ remains a valid lower bound without asserting equality.
@@ -405,7 +405,7 @@ is a bijection of the Boolean cube. Its output bits are independent and fair, an
 \nu\sim\mathrm{Binomial}(D,1/2),
 \qquad
 \Pr\left(\nu>D/2+\sqrt{nD}\right)\le e^{-2n}.
-\tag{21}
+\qquad\text{(21)}
 ```
 
 The tail follows from the scalar moment-generating-function argument applied to independent bits. On the good event use the mean $`m_*c_n^{r_D}`$. On the exceptional event use $`|\overline A|^2\le1`$. Combining with (18) proves (3). If $`r_D>D`$, the bad event is empty and the larger real exponent remains valid.
@@ -418,7 +418,7 @@ Fix $`\epsilon\in(0,1)`$ and suppose
 
 ```math
 1\le D\le\frac{(1-\epsilon)n^2\log n}{2\pi^2}.
-\tag{22}
+\qquad\text{(22)}
 ```
 
 Using
@@ -442,7 +442,7 @@ The exponent in (3) is at least a positive constant times $`n^\epsilon`$. Its po
 ```math
 \mathbb E\mathcal G_X,\quad\mathbb E\mathcal G_Y
 \le\exp[-\Omega_{\beta,\epsilon}(n^\epsilon)].
-\tag{23}
+\qquad\text{(23)}
 ```
 
 The [density logarithmic-depth corollary](density_transport.md#7-logarithmic-depth-corollaries) supplies the simultaneous polynomial lower bound when its suffix condition holds.
