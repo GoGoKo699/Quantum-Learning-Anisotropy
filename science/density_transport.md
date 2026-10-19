@@ -33,7 +33,7 @@ Here $`p`$ is the marginal probability that any noncontrol logical output bit is
 \frac{2\eta^2}{3n^2}\sin^2(\pi/n)\lambda^{2(D-1)}
 \ge
 \frac{8\eta^2}{3n^4}\lambda^{2(D-1)}.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The expectation includes both the fair matching schedule and all Haar gates. The gradient energy is the sum over the $`M=3nD`$ directions in
@@ -43,7 +43,7 @@ Consequently, for fixed $`\alpha>1/\pi^2`$ and $`D=\lfloor\alpha n^2\rfloor`$,
 
 ```math
 \mathbb E\,\mathcal G_Z=\Omega_\alpha(n^{-4}).
-\tag{2}
+\qquad\text{(2)}
 ```
 
 The floor concerns the square of the derivative of the population loss. An average of per-example squared gradients is not substituted for that quantity.
@@ -56,7 +56,7 @@ On one edge $`(i,j)`$, averaging a full charge-preserving Haar gate gives
 \mathbb E_G[G^\dagger Z_iG]
 =\mathbb E_G[G^\dagger Z_jG]
 =\frac{Z_i+Z_j}{2}.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 In the one-particle block the traceless part of either local Z averages to zero. In the zero- and two-particle blocks both sides of (3) have the same scalar value. Operators on other sites are unchanged.
@@ -68,7 +68,7 @@ P=\frac12(P_A+P_B)
 =I-\frac14L_{C_n},
 \qquad
 (Pv)_j=\frac12v_j+\frac14v_{j-1}+\frac14v_{j+1}.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 The Fourier modes $`e^{2\pi i k j/n}`$ have eigenvalues
@@ -88,7 +88,7 @@ After $`t`$ averaged prefix layers the positive profile is $`P^t\bar q`$. Averag
 
 ```math
 \sum_j b_jZ_j,\qquad b=P^se_0.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 ## 3. Exact conditional response of an actual Haar gate
@@ -133,7 +133,7 @@ $`i[\sigma_x,\sigma_z]=2\sigma_y`$, the conditional positive-class prediction de
 \mid G,\ e\text{ present}
 \right]
 =-\frac12\Delta q_t\Delta b_s n_y.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 This equation uses the mean labeled profile $`\bar q`$ before any square is taken.
@@ -143,7 +143,7 @@ Haar conjugation makes $`(n_x,n_y,n_z)`$ uniform on the unit sphere. Rotational 
 ```math
 \mathbb E\,g_\ell^2
 \ge\frac{(\Delta q_t)^2(\Delta b_s)^2}{24},
-\tag{7}
+\qquad\text{(7)}
 ```
 
 where $`g_\ell`$ is the selected derivative when the edge is present and is defined to be zero otherwise. The factor $`1/24`$ consists of the squared loss factor $`1/4`$, the Haar Bloch factor $`1/3`$, and the matching probability $`1/2`$.
@@ -161,14 +161,14 @@ The readout difference has the exact Fourier representation
 \cos(2\pi ka/n)
 -\cos(2\pi k(a+1)/n)
 \right].
-\tag{8}
+\qquad\text{(8)}
 ```
 
 The constant mode cancels. The $`k=1,n-1`$ pair contributes
 
 ```math
 \frac4n\sin(\pi/n)\cos(\pi/n)\lambda^s,
-\tag{9}
+\qquad\text{(9)}
 ```
 
 because $`a=n/4`$. The $`k=n/2`$ mode is zero when $`s\ge1`$.
@@ -181,7 +181,7 @@ For $`2\le k<n/2`$,
 \exp\left[-\frac{\pi^2s}{n^2}(k^2-1)\right],
 \qquad
 \sin(\pi k/n)\le k\sin(\pi/n).
-\tag{10}
+\qquad\text{(10)}
 ```
 
 For the first inequality, integrate $`\tan x\ge x`$ between $`\pi/n`$ and $`\pi k/n`$ in the difference of two logarithms of cosines. For the second, use $`|\sin(kx)|\le k|\sin x|`$.
@@ -194,7 +194,7 @@ $`(4/n)\sin(\pi k/n)`$. Therefore, for $`s\ge S`$, the entire higher-mode remain
 \le
 \frac4n\sin(\pi/n)\lambda^s
 \sum_{k=2}^{\infty}k e^{-(k^2-1)}.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 The scalar sum can be bounded without a numerical approximation. Since
@@ -209,7 +209,7 @@ $`k^2-1\ge3(k-1)`$ for $`k\ge2`$, and $`r=e^{-3}<1/20`$,
 \frac{39}{361}
 <
 \frac18.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 Combining (9), (11), and (12), and using
@@ -222,7 +222,7 @@ $`\cos(\pi/n)\ge\cos(\pi/8)>5/8`$, proves
 \ge
 \frac4{n^2}\lambda^s,
 \qquad s\ge S.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 The last inequality uses $`\sin(\pi/n)\ge2/n`$. The lower-depth condition is material: the selected edge and readout are macroscopically separated, and sufficiently short suffixes can give exactly zero response.
@@ -239,7 +239,7 @@ $`q^{\mathrm{wall}}_a=-1`$ and $`q^{\mathrm{wall}}_{a+1}=+1`$. It follows that
 \le-2\eta,
 \qquad
 |\Delta q_0|\ge2\eta.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 The bound is valid regardless of where the fixed permutation places the control rail. A control site has magnetization magnitude one and a noncontrol site magnitude $`\eta`$; their signs at this edge are opposite.
@@ -298,7 +298,7 @@ Pairing opposite Fourier modes gives the exact edge-difference expansion
 \sum_{k=1}^{n/2-1}
 \sin(\pi k/n)\lambda_k^t
 \langle f^{(k)},\bar q\rangle.
-\tag{15}
+\qquad\text{(15)}
 ```
 
 The leading term is
@@ -306,7 +306,7 @@ The leading term is
 ```math
 -\frac4n\sin(\pi/n)\lambda^t\langle f,\bar q\rangle
 \le-4\beta\sin(\pi/n)\lambda^t.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 The cosine quadrature does not enter this particular edge difference. Since
@@ -317,7 +317,7 @@ $`|\langle f^{(k)},\bar q\rangle|\le n`$, (10) bounds the remainder by
 \le4\sin(\pi/n)\lambda^t
 \sum_{k=2}^{\infty}
 k\exp\left[-\frac{\pi^2t}{n^2}(k^2-1)\right].
-\tag{17}
+\qquad\text{(17)}
 ```
 
 When $`t\ge T_\beta`$, the scalar sum satisfies
@@ -333,7 +333,7 @@ When $`t\ge T_\beta`$, the scalar sum satisfies
 \frac{\beta^3}{8}
 \le\frac{\beta}{2}.
 \end{aligned}
-\tag{18}
+\qquad\text{(18)}
 ```
 
 Combining (16)–(18) proves the uniformly signed estimate
@@ -343,7 +343,7 @@ Combining (16)–(18) proves the uniformly signed estimate
 \le
 -2\beta\sin(\pi/n)\lambda^t,
 \qquad t\ge T_\beta.
-\tag{19}
+\qquad\text{(19)}
 ```
 
 The mean labeled profile was formed before filtering and before squaring. Thus the protected conditional responses cannot cancel when the nuisance examples are averaged.
@@ -360,7 +360,7 @@ For a layer with $`t=\ell-1\ge T_\beta`$ and $`s=D-\ell\ge S`$, insert (13) and 
 &\ge
 \frac{32\beta^2}{3n^6}\lambda^{2(D-1)}.
 \end{aligned}
-\tag{20}
+\qquad\text{(20)}
 ```
 
 Exactly
@@ -375,7 +375,7 @@ layers meet the two conditions. Their selected directions are distinct coordinat
 \mathbb E\,\mathcal G_Z
 \ge
 J\,\frac{32\beta^2}{3n^6}\lambda^{2(D-1)}.
-\tag{21}
+\qquad\text{(21)}
 ```
 
 For fixed
@@ -386,7 +386,7 @@ one has $`J=\Theta(n^2)`$, giving
 ```math
 \mathbb E\,\mathcal G_Z
 =\Omega_{\alpha,\beta}(n^{-4}).
-\tag{22}
+\qquad\text{(22)}
 ```
 
 The same profile condition supplies the [uniform coherence upper bound](coherence_bound.md#1-statement). Thus the comparison extends to any fixed nuisance distribution in this profile class. The fixed-weight family has the stronger first-layer result and needs only $`\alpha>1/\pi^2`$.
@@ -398,7 +398,7 @@ Fix $`\epsilon\in(0,1)`$. If
 ```math
 S+1\le D\le
 \frac{(1-\epsilon)n^2\log n}{2\pi^2},
-\tag{23}
+\qquad\text{(23)}
 ```
 
 then
@@ -408,7 +408,7 @@ gives
 ```math
 \lambda^{2(D-1)}
 =\Omega_\epsilon(n^{-1+\epsilon}).
-\tag{24}
+\qquad\text{(24)}
 ```
 
 For the fixed-weight nuisance source, Theorem 1 therefore implies
@@ -416,7 +416,7 @@ For the fixed-weight nuisance source, Theorem 1 therefore implies
 ```math
 \mathbb E\,\mathcal G_Z
 =\Omega_\epsilon(n^{-5+\epsilon}).
-\tag{25}
+\qquad\text{(25)}
 ```
 
 In the same window, [the matching-count refinement of the coherence bound](coherence_bound.md#7-matching-statistics-and-the-logarithmic-window) gives
@@ -425,7 +425,7 @@ In the same window, [the matching-count refinement of the coherence bound](coher
 \mathbb E\,\mathcal G_X,\quad
 \mathbb E\,\mathcal G_Y
 \le\exp[-\Omega_\epsilon(n^\epsilon)].
-\tag{26}
+\qquad\text{(26)}
 ```
 
 For the broader profile class, (21) and (24) instead give the explicit bound
